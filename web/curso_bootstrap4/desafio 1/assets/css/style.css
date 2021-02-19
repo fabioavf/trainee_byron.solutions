@@ -1,0 +1,32 @@
+/*  Cores:
+    
+        Laranja: #F37520
+        Cinza NavLeft: #EDEDED
+        Cinza Footer: #454545
+        Texto: #000000
+        Fundo: #FFFFFF
+
+*/
+
+header {
+  background-color: #f37520;
+  min-height: 5rem;
+}
+
+.page-body {
+}
+
+.nav-left {
+  background-color: #ededed;
+}
+
+.text-body {
+}
+
+footer {
+  background-color: #454545;
+  min-height: 10rem;
+}
+
+@media (min-width: 576px) {
+}

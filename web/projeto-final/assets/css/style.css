@@ -1,0 +1,87 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-constraint {
+    position: relative;
+}
+
+.carousel-constraint::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    z-index: 10;
+    height: 14.4vw;
+    width: 30vw;
+    background: url(../img/studio-logo.png) #fff;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption {
+    padding: 30px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h5 {
+    text-align: left;
+    color: #fff;
+    line-height: 24px;
+    text-shadow: 1px 1px 6px black;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+.about {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.movie-list {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.movie-list h2 {
+    text-align: center;
+    padding: 0;
+}
+
+.movie-grid img {
+    margin-bottom: 2rem;
+}
+
+.modal-header {
+    background-color: #f5f5f5
+}
+
+.modal-body a img {
+    margin: 0.2rem 1rem 0.2rem 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 1rem 0 0 0;
+}
+
+@media (min-width: 960px) {
+    .carousel-constraint, .carousel, .carousel-inner, .carousel-item {
+        max-height: 75vh;
+    }
+}

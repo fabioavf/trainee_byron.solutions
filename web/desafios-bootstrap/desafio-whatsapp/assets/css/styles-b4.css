@@ -1,0 +1,30 @@
+.contact-photo {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+}
+
+.bg-search {
+    background-color: #f8f8f8;
+    height: 2.5rem;
+}
+
+.bg-chat {
+    height: calc(100vh - 5.5rem);
+    background-color: #e5ddd5;
+}
+
+.contact-bg {
+    box-shadow: -2px 0px #f8f8f8;
+}
+
+.bg-chat-lower {
+    height: 2.5rem;
+    background-color: #eeeeee;
+}
+
+.bg-top {
+    background-color: #eeeeee;
+    box-shadow: -1px 1px #dbdbdb;
+    height: 3rem;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode - Grid System</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+    <button type="button" data-toggle="modal" data-target="#modal-1" class="btn btn-primary btn-lg">Abrir</button>
+
+    <div class="modal" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6>Teste do Modal</h6>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ipsam? Saepe
+                        eum autem mollitia corrupti ullam, doloremque harum in, culpa iure quibusdam
+                        aspernatur tenetur ut amet a enim asperiores voluptatibus?
+                    </p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal"
+                            class="btn btn-secondary">Cancelar</button>
+                    <button type="button" id="btn-continue" class="btn btn-primary">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+
+    <script>
+        $(() => {
+            $('#btn-continue').on('click', e => {
+                $('#modal-1').modal('hide');
+            });
+        });
+    </script>
+</body>
+
+</html>
